@@ -1,0 +1,36 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../../../theme/_variables.less';
+
+.fieldLabel {
+  position: absolute;
+  top: -1.8rem;
+  // We need to show the label on top of input field since we would
+  // want the border hidden behind the label when label floats to the top
+  z-index: 2;
+  width: max-content;
+  margin-left: 2rem;
+  padding: 0.5rem 0.5rem;
+  background: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.fieldLabelAsPlaceholder {
+  top: 1rem;
+  // We need the label to go behind the input field so that
+  // user can interact with the input field
+  z-index: 1;
+}
+
+.requiredIndicator {
+  margin-left: 0.3rem;
+}
+
+.errorLabel {
+  color: @red;
+}
+
+.telephoneNumber {
+  input {
+    letter-spacing: 0.2rem;
+  }
+}
